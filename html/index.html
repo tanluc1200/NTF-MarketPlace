@@ -4,6 +4,688 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>NTF-MarketPlace</title>
+        <!-- Link Fonts -->
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../fonts/stylesheet.css" />
+        <!-- Custom css -->
+        <link rel="stylesheet" href="../css/style.css" />
     </head>
-    <body></body>
+    <body>
+        <!-- Header start -->
+        <div class="header">
+            <div class="line"></div>
+            <div class="wrapper header-content">
+                <!-- header menu mobile -->
+                <div class="header-mobile-menu">
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g clip-path="url(#clip0_313_1410)">
+                            <path
+                                d="M3 5C3 4.44772 3.44772 4 4 4H20C20.5523 4 21 4.44772 21 5C21 5.55228 20.5523 6 20 6H4C3.44772 6 3 5.55228 3 5ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 19C3 18.4477 3.44772 18 4 18H20C20.5523 18 21 18.4477 21 19C21 19.5523 20.5523 20 20 20H4C3.44772 20 3 19.5523 3 19Z"
+                                fill="#BFBFBF"
+                            />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_313_1410">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <!-- header mobile search -->
+                <div class="header-mobile-search">
+                    <svg
+                        width="19"
+                        height="19"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M8.60938 14.8438C12.0525 14.8438 14.8438 12.0525 14.8438 8.60938C14.8438 5.16622 12.0525 2.375 8.60938 2.375C5.16622 2.375 2.375 5.16622 2.375 8.60938C2.375 12.0525 5.16622 14.8438 8.60938 14.8438Z"
+                            stroke="#BFBFBF"
+                            stroke-width="1.2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M13.0179 13.0179L16.625 16.6249"
+                            stroke="#BFBFBF"
+                            stroke-width="1.2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+                <!-- logo -->
+                <div class="header-logo">
+                    <img src="../img/logo-header.svg" alt="" />
+                </div>
+                <!-- form search -->
+                <div class="header-search">
+                    <svg
+                        width="19"
+                        height="19"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M8.60938 14.8438C12.0525 14.8438 14.8438 12.0525 14.8438 8.60938C14.8438 5.16622 12.0525 2.375 8.60938 2.375C5.16622 2.375 2.375 5.16622 2.375 8.60938C2.375 12.0525 5.16622 14.8438 8.60938 14.8438Z"
+                            stroke="#BFBFBF"
+                            stroke-width="1.2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M13.0181 13.0179L16.6251 16.6249"
+                            stroke="#BFBFBF"
+                            stroke-width="1.2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+
+                    <input
+                        type="text"
+                        placeholder="Search for artworks, collections, artists etc"
+                    />
+                </div>
+                <!-- nav menu -->
+                <ul class="header-menu">
+                    <li>
+                        <a href="#!"
+                            >Home
+                            <svg
+                                width="27"
+                                height="27"
+                                viewBox="0 0 27 27"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M17.2969 12.2344L13.5 16.4531L9.70312 12.2344"
+                                    stroke="white"
+                                    stroke-width="1.2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!"
+                            >Explore
+                            <svg
+                                width="27"
+                                height="27"
+                                viewBox="0 0 27 27"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M17.2969 12.2344L13.5 16.4531L9.70312 12.2344"
+                                    stroke="white"
+                                    stroke-width="1.2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                /></svg
+                        ></a>
+
+                        <ul>
+                            <li>
+                                <svg
+                                    width="14"
+                                    height="13"
+                                    viewBox="0 0 14 13"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M11.9289 1.01178H8.89148C8.56093 1.01178 8.29297 1.27974 8.29297 1.61029V4.64549C8.29297 4.97604 8.56093 5.244 8.89148 5.244H11.9289C12.2595 5.244 12.5274 4.97604 12.5274 4.64549V1.61029C12.5274 1.27974 12.2595 1.01178 11.9289 1.01178Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.17"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M11.9289 7.78369H8.89148C8.56093 7.78369 8.29297 8.05165 8.29297 8.3822V11.4174C8.29297 11.7479 8.56093 12.0159 8.89148 12.0159H11.9289C12.2595 12.0159 12.5274 11.7479 12.5274 11.4174V8.3822C12.5274 8.05165 12.2595 7.78369 11.9289 7.78369Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.17"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M5.16232 1.00696H2.12488C1.79433 1.00696 1.52637 1.27492 1.52637 1.60547V4.64067C1.52637 4.97121 1.79433 5.23918 2.12488 5.23918H5.16232C5.49287 5.23918 5.76083 4.97121 5.76083 4.64067V1.60547C5.76083 1.27492 5.49287 1.00696 5.16232 1.00696Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.17"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M5.1633 7.77893H2.12585C1.79531 7.77893 1.52734 8.04689 1.52734 8.37744V11.4126C1.52734 11.7432 1.79531 12.0111 2.12585 12.0111H5.1633C5.49384 12.0111 5.76181 11.7432 5.76181 11.4126V8.37744C5.76181 8.04689 5.49384 7.77893 5.1633 7.77893Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.17"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <a href="#!">Collections</a>
+                                <ul>
+                                    <li>
+                                        <svg
+                                            width="14"
+                                            height="13"
+                                            viewBox="0 0 14 13"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M11.9289 1.01178H8.89148C8.56093 1.01178 8.29297 1.27974 8.29297 1.61029V4.64549C8.29297 4.97604 8.56093 5.244 8.89148 5.244H11.9289C12.2595 5.244 12.5274 4.97604 12.5274 4.64549V1.61029C12.5274 1.27974 12.2595 1.01178 11.9289 1.01178Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M11.9289 7.78369H8.89148C8.56093 7.78369 8.29297 8.05165 8.29297 8.3822V11.4174C8.29297 11.7479 8.56093 12.0159 8.89148 12.0159H11.9289C12.2595 12.0159 12.5274 11.7479 12.5274 11.4174V8.3822C12.5274 8.05165 12.2595 7.78369 11.9289 7.78369Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M5.16232 1.00696H2.12488C1.79433 1.00696 1.52637 1.27492 1.52637 1.60547V4.64067C1.52637 4.97121 1.79433 5.23918 2.12488 5.23918H5.16232C5.49287 5.23918 5.76083 4.97121 5.76083 4.64067V1.60547C5.76083 1.27492 5.49287 1.00696 5.16232 1.00696Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M5.1633 7.77893H2.12585C1.79531 7.77893 1.52734 8.04689 1.52734 8.37744V11.4126C1.52734 11.7432 1.79531 12.0111 2.12585 12.0111H5.1633C5.49384 12.0111 5.76181 11.7432 5.76181 11.4126V8.37744C5.76181 8.04689 5.49384 7.77893 5.1633 7.77893Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        <a href="#!">Collections 1</a>
+                                    </li>
+                                    <li>
+                                        <svg
+                                            width="14"
+                                            height="13"
+                                            viewBox="0 0 14 13"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M11.9289 1.01178H8.89148C8.56093 1.01178 8.29297 1.27974 8.29297 1.61029V4.64549C8.29297 4.97604 8.56093 5.244 8.89148 5.244H11.9289C12.2595 5.244 12.5274 4.97604 12.5274 4.64549V1.61029C12.5274 1.27974 12.2595 1.01178 11.9289 1.01178Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M11.9289 7.78369H8.89148C8.56093 7.78369 8.29297 8.05165 8.29297 8.3822V11.4174C8.29297 11.7479 8.56093 12.0159 8.89148 12.0159H11.9289C12.2595 12.0159 12.5274 11.7479 12.5274 11.4174V8.3822C12.5274 8.05165 12.2595 7.78369 11.9289 7.78369Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M5.16232 1.00696H2.12488C1.79433 1.00696 1.52637 1.27492 1.52637 1.60547V4.64067C1.52637 4.97121 1.79433 5.23918 2.12488 5.23918H5.16232C5.49287 5.23918 5.76083 4.97121 5.76083 4.64067V1.60547C5.76083 1.27492 5.49287 1.00696 5.16232 1.00696Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M5.1633 7.77893H2.12585C1.79531 7.77893 1.52734 8.04689 1.52734 8.37744V11.4126C1.52734 11.7432 1.79531 12.0111 2.12585 12.0111H5.1633C5.49384 12.0111 5.76181 11.7432 5.76181 11.4126V8.37744C5.76181 8.04689 5.49384 7.77893 5.1633 7.77893Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        <a href="#!">Collections 2</a>
+                                    </li>
+                                    <li>
+                                        <svg
+                                            width="14"
+                                            height="13"
+                                            viewBox="0 0 14 13"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M11.9289 1.01178H8.89148C8.56093 1.01178 8.29297 1.27974 8.29297 1.61029V4.64549C8.29297 4.97604 8.56093 5.244 8.89148 5.244H11.9289C12.2595 5.244 12.5274 4.97604 12.5274 4.64549V1.61029C12.5274 1.27974 12.2595 1.01178 11.9289 1.01178Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M11.9289 7.78369H8.89148C8.56093 7.78369 8.29297 8.05165 8.29297 8.3822V11.4174C8.29297 11.7479 8.56093 12.0159 8.89148 12.0159H11.9289C12.2595 12.0159 12.5274 11.7479 12.5274 11.4174V8.3822C12.5274 8.05165 12.2595 7.78369 11.9289 7.78369Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M5.16232 1.00696H2.12488C1.79433 1.00696 1.52637 1.27492 1.52637 1.60547V4.64067C1.52637 4.97121 1.79433 5.23918 2.12488 5.23918H5.16232C5.49287 5.23918 5.76083 4.97121 5.76083 4.64067V1.60547C5.76083 1.27492 5.49287 1.00696 5.16232 1.00696Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M5.1633 7.77893H2.12585C1.79531 7.77893 1.52734 8.04689 1.52734 8.37744V11.4126C1.52734 11.7432 1.79531 12.0111 2.12585 12.0111H5.1633C5.49384 12.0111 5.76181 11.7432 5.76181 11.4126V8.37744C5.76181 8.04689 5.49384 7.77893 5.1633 7.77893Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        <a href="#!">Collections 3</a>
+                                    </li>
+                                    <li>
+                                        <svg
+                                            width="14"
+                                            height="13"
+                                            viewBox="0 0 14 13"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M11.9289 1.01178H8.89148C8.56093 1.01178 8.29297 1.27974 8.29297 1.61029V4.64549C8.29297 4.97604 8.56093 5.244 8.89148 5.244H11.9289C12.2595 5.244 12.5274 4.97604 12.5274 4.64549V1.61029C12.5274 1.27974 12.2595 1.01178 11.9289 1.01178Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M11.9289 7.78369H8.89148C8.56093 7.78369 8.29297 8.05165 8.29297 8.3822V11.4174C8.29297 11.7479 8.56093 12.0159 8.89148 12.0159H11.9289C12.2595 12.0159 12.5274 11.7479 12.5274 11.4174V8.3822C12.5274 8.05165 12.2595 7.78369 11.9289 7.78369Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M5.16232 1.00696H2.12488C1.79433 1.00696 1.52637 1.27492 1.52637 1.60547V4.64067C1.52637 4.97121 1.79433 5.23918 2.12488 5.23918H5.16232C5.49287 5.23918 5.76083 4.97121 5.76083 4.64067V1.60547C5.76083 1.27492 5.49287 1.00696 5.16232 1.00696Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M5.1633 7.77893H2.12585C1.79531 7.77893 1.52734 8.04689 1.52734 8.37744V11.4126C1.52734 11.7432 1.79531 12.0111 2.12585 12.0111H5.1633C5.49384 12.0111 5.76181 11.7432 5.76181 11.4126V8.37744C5.76181 8.04689 5.49384 7.77893 5.1633 7.77893Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        <a href="#!">Collections 4</a>
+                                    </li>
+                                    <li>
+                                        <svg
+                                            width="14"
+                                            height="13"
+                                            viewBox="0 0 14 13"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M11.9289 1.01178H8.89148C8.56093 1.01178 8.29297 1.27974 8.29297 1.61029V4.64549C8.29297 4.97604 8.56093 5.244 8.89148 5.244H11.9289C12.2595 5.244 12.5274 4.97604 12.5274 4.64549V1.61029C12.5274 1.27974 12.2595 1.01178 11.9289 1.01178Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M11.9289 7.78369H8.89148C8.56093 7.78369 8.29297 8.05165 8.29297 8.3822V11.4174C8.29297 11.7479 8.56093 12.0159 8.89148 12.0159H11.9289C12.2595 12.0159 12.5274 11.7479 12.5274 11.4174V8.3822C12.5274 8.05165 12.2595 7.78369 11.9289 7.78369Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M5.16232 1.00696H2.12488C1.79433 1.00696 1.52637 1.27492 1.52637 1.60547V4.64067C1.52637 4.97121 1.79433 5.23918 2.12488 5.23918H5.16232C5.49287 5.23918 5.76083 4.97121 5.76083 4.64067V1.60547C5.76083 1.27492 5.49287 1.00696 5.16232 1.00696Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M5.1633 7.77893H2.12585C1.79531 7.77893 1.52734 8.04689 1.52734 8.37744V11.4126C1.52734 11.7432 1.79531 12.0111 2.12585 12.0111H5.1633C5.49384 12.0111 5.76181 11.7432 5.76181 11.4126V8.37744C5.76181 8.04689 5.49384 7.77893 5.1633 7.77893Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        <a href="#!">Collections 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <svg
+                                    width="12"
+                                    height="14"
+                                    viewBox="0 0 12 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 5.78125V8.59375"
+                                        stroke="currentColor"
+                                        stroke-width="1.17"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M10.5625 1H7.1875C6.87684 1 6.625 1.25184 6.625 1.5625V4.9375C6.625 5.24816 6.87684 5.5 7.1875 5.5H10.5625C10.8732 5.5 11.125 5.24816 11.125 4.9375V1.5625C11.125 1.25184 10.8732 1 10.5625 1Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.17"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M10.5625 8.875H7.1875C6.87684 8.875 6.625 9.12684 6.625 9.4375V12.8125C6.625 13.1232 6.87684 13.375 7.1875 13.375H10.5625C10.8732 13.375 11.125 13.1232 11.125 12.8125V9.4375C11.125 9.12684 10.8732 8.875 10.5625 8.875Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.17"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M1 7.1875H3.8125"
+                                        stroke="currentColor"
+                                        stroke-width="1.17"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M6.62501 11.125H5.50001C5.27815 11.1259 5.05829 11.0829 4.85314 10.9985C4.64798 10.914 4.46158 10.7897 4.3047 10.6328C4.14781 10.4759 4.02355 10.2895 3.93907 10.0844C3.8546 9.87924 3.81158 9.65938 3.81251 9.43752V4.93751C3.81158 4.71565 3.8546 4.49579 3.93907 4.29064C4.02355 4.08548 4.14781 3.89908 4.3047 3.7422C4.46158 3.58531 4.64798 3.46105 4.85314 3.37657C5.05829 3.2921 5.27815 3.24908 5.50001 3.25001H6.62501"
+                                        stroke="white"
+                                        stroke-width="1.17"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <a href="#!1">Artworks</a>
+                                <ul>
+                                    <li>
+                                        <svg
+                                            width="12"
+                                            height="14"
+                                            viewBox="0 0 12 14"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M1 5.78125V8.59375"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M10.5625 1H7.1875C6.87684 1 6.625 1.25184 6.625 1.5625V4.9375C6.625 5.24816 6.87684 5.5 7.1875 5.5H10.5625C10.8732 5.5 11.125 5.24816 11.125 4.9375V1.5625C11.125 1.25184 10.8732 1 10.5625 1Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M10.5625 8.875H7.1875C6.87684 8.875 6.625 9.12684 6.625 9.4375V12.8125C6.625 13.1232 6.87684 13.375 7.1875 13.375H10.5625C10.8732 13.375 11.125 13.1232 11.125 12.8125V9.4375C11.125 9.12684 10.8732 8.875 10.5625 8.875Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M1 7.1875H3.8125"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M6.62501 11.125H5.50001C5.27815 11.1259 5.05829 11.0829 4.85314 10.9985C4.64798 10.914 4.46158 10.7897 4.3047 10.6328C4.14781 10.4759 4.02355 10.2895 3.93907 10.0844C3.8546 9.87924 3.81158 9.65938 3.81251 9.43752V4.93751C3.81158 4.71565 3.8546 4.49579 3.93907 4.29064C4.02355 4.08548 4.14781 3.89908 4.3047 3.7422C4.46158 3.58531 4.64798 3.46105 4.85314 3.37657C5.05829 3.2921 5.27815 3.24908 5.50001 3.25001H6.62501"
+                                                stroke="white"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        <a href="#!">Artwork 1</a>
+                                    </li>
+                                    <li>
+                                        <svg
+                                            width="12"
+                                            height="14"
+                                            viewBox="0 0 12 14"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M1 5.78125V8.59375"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M10.5625 1H7.1875C6.87684 1 6.625 1.25184 6.625 1.5625V4.9375C6.625 5.24816 6.87684 5.5 7.1875 5.5H10.5625C10.8732 5.5 11.125 5.24816 11.125 4.9375V1.5625C11.125 1.25184 10.8732 1 10.5625 1Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M10.5625 8.875H7.1875C6.87684 8.875 6.625 9.12684 6.625 9.4375V12.8125C6.625 13.1232 6.87684 13.375 7.1875 13.375H10.5625C10.8732 13.375 11.125 13.1232 11.125 12.8125V9.4375C11.125 9.12684 10.8732 8.875 10.5625 8.875Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M1 7.1875H3.8125"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M6.62501 11.125H5.50001C5.27815 11.1259 5.05829 11.0829 4.85314 10.9985C4.64798 10.914 4.46158 10.7897 4.3047 10.6328C4.14781 10.4759 4.02355 10.2895 3.93907 10.0844C3.8546 9.87924 3.81158 9.65938 3.81251 9.43752V4.93751C3.81158 4.71565 3.8546 4.49579 3.93907 4.29064C4.02355 4.08548 4.14781 3.89908 4.3047 3.7422C4.46158 3.58531 4.64798 3.46105 4.85314 3.37657C5.05829 3.2921 5.27815 3.24908 5.50001 3.25001H6.62501"
+                                                stroke="white"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        <a href="#!">Artwork 2</a>
+                                    </li>
+                                    <li>
+                                        <svg
+                                            width="12"
+                                            height="14"
+                                            viewBox="0 0 12 14"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M1 5.78125V8.59375"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M10.5625 1H7.1875C6.87684 1 6.625 1.25184 6.625 1.5625V4.9375C6.625 5.24816 6.87684 5.5 7.1875 5.5H10.5625C10.8732 5.5 11.125 5.24816 11.125 4.9375V1.5625C11.125 1.25184 10.8732 1 10.5625 1Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M10.5625 8.875H7.1875C6.87684 8.875 6.625 9.12684 6.625 9.4375V12.8125C6.625 13.1232 6.87684 13.375 7.1875 13.375H10.5625C10.8732 13.375 11.125 13.1232 11.125 12.8125V9.4375C11.125 9.12684 10.8732 8.875 10.5625 8.875Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M1 7.1875H3.8125"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M6.62501 11.125H5.50001C5.27815 11.1259 5.05829 11.0829 4.85314 10.9985C4.64798 10.914 4.46158 10.7897 4.3047 10.6328C4.14781 10.4759 4.02355 10.2895 3.93907 10.0844C3.8546 9.87924 3.81158 9.65938 3.81251 9.43752V4.93751C3.81158 4.71565 3.8546 4.49579 3.93907 4.29064C4.02355 4.08548 4.14781 3.89908 4.3047 3.7422C4.46158 3.58531 4.64798 3.46105 4.85314 3.37657C5.05829 3.2921 5.27815 3.24908 5.50001 3.25001H6.62501"
+                                                stroke="white"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        <a href="#!">Artwork 3</a>
+                                    </li>
+                                    <li>
+                                        <svg
+                                            width="12"
+                                            height="14"
+                                            viewBox="0 0 12 14"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M1 5.78125V8.59375"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M10.5625 1H7.1875C6.87684 1 6.625 1.25184 6.625 1.5625V4.9375C6.625 5.24816 6.87684 5.5 7.1875 5.5H10.5625C10.8732 5.5 11.125 5.24816 11.125 4.9375V1.5625C11.125 1.25184 10.8732 1 10.5625 1Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M10.5625 8.875H7.1875C6.87684 8.875 6.625 9.12684 6.625 9.4375V12.8125C6.625 13.1232 6.87684 13.375 7.1875 13.375H10.5625C10.8732 13.375 11.125 13.1232 11.125 12.8125V9.4375C11.125 9.12684 10.8732 8.875 10.5625 8.875Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M1 7.1875H3.8125"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M6.62501 11.125H5.50001C5.27815 11.1259 5.05829 11.0829 4.85314 10.9985C4.64798 10.914 4.46158 10.7897 4.3047 10.6328C4.14781 10.4759 4.02355 10.2895 3.93907 10.0844C3.8546 9.87924 3.81158 9.65938 3.81251 9.43752V4.93751C3.81158 4.71565 3.8546 4.49579 3.93907 4.29064C4.02355 4.08548 4.14781 3.89908 4.3047 3.7422C4.46158 3.58531 4.64798 3.46105 4.85314 3.37657C5.05829 3.2921 5.27815 3.24908 5.50001 3.25001H6.62501"
+                                                stroke="white"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        <a href="#!">Artwork 4</a>
+                                    </li>
+                                    <li>
+                                        <svg
+                                            width="12"
+                                            height="14"
+                                            viewBox="0 0 12 14"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M1 5.78125V8.59375"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M10.5625 1H7.1875C6.87684 1 6.625 1.25184 6.625 1.5625V4.9375C6.625 5.24816 6.87684 5.5 7.1875 5.5H10.5625C10.8732 5.5 11.125 5.24816 11.125 4.9375V1.5625C11.125 1.25184 10.8732 1 10.5625 1Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M10.5625 8.875H7.1875C6.87684 8.875 6.625 9.12684 6.625 9.4375V12.8125C6.625 13.1232 6.87684 13.375 7.1875 13.375H10.5625C10.8732 13.375 11.125 13.1232 11.125 12.8125V9.4375C11.125 9.12684 10.8732 8.875 10.5625 8.875Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M1 7.1875H3.8125"
+                                                stroke="currentColor"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M6.62501 11.125H5.50001C5.27815 11.1259 5.05829 11.0829 4.85314 10.9985C4.64798 10.914 4.46158 10.7897 4.3047 10.6328C4.14781 10.4759 4.02355 10.2895 3.93907 10.0844C3.8546 9.87924 3.81158 9.65938 3.81251 9.43752V4.93751C3.81158 4.71565 3.8546 4.49579 3.93907 4.29064C4.02355 4.08548 4.14781 3.89908 4.3047 3.7422C4.46158 3.58531 4.64798 3.46105 4.85314 3.37657C5.05829 3.2921 5.27815 3.24908 5.50001 3.25001H6.62501"
+                                                stroke="white"
+                                                stroke-width="1.17"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        <a href="#!">Artwork 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!"
+                            >Community
+                            <svg
+                                width="27"
+                                height="27"
+                                viewBox="0 0 27 27"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M17.2969 12.2344L13.5 16.4531L9.70312 12.2344"
+                                    stroke="white"
+                                    stroke-width="1.2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                /></svg
+                        ></a>
+                    </li>
+                    <div class="header-cta">
+                        <a href="#!" class="btn radius">Connect</a>
+                    </div>
+                </ul>
+                <!-- cta -->
+                <!-- <div class="header-cta">
+                    <a href="#!" class="btn radius">Connect</a>
+                </div> -->
+            </div>
+        </div>
+        <!-- Header end -->
+    </body>
 </html>

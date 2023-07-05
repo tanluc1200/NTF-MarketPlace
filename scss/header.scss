@@ -1,0 +1,170 @@
+.header {
+    position: relative;
+    z-index: 999;
+    padding-block: 26rem;
+    .line {
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        opacity: 0.10000000149011612;
+        background: #fff;
+    }
+    &-content {
+        display: flex;
+        align-items: center;
+    }
+    &-mobile-menu {
+        order: 0;
+        display: none;
+    }
+    &-mobile-search {
+        order: 5;
+        display: none;
+    }
+    &-logo {
+        width: 107rem;
+        height: 61.91rem;
+        flex-shrink: 0;
+        order: 1;
+    }
+    &-search {
+        order: 2;
+        margin-inline: 80rem 34rem;
+        position: relative;
+        width: 394px;
+        height: 46px;
+        border-radius: 8px;
+        background: rgb(237, 242, 247, 0.1);
+        svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+        }
+        input {
+            width: 100%;
+            height: 100%;
+            font-family: var(--aeonik-font);
+            color: var(--silver-3);
+            padding-inline: 50rem 20rem;
+            &::placeholder {
+                font-size: 15rem;
+            }
+        }
+    }
+    &-menu {
+        order: 3;
+        display: flex;
+        align-items: center;
+        column-gap: 44rem;
+        > li {
+            // display: flex;
+            // align-items: center;
+            position: relative;
+            a {
+                display: flex;
+                align-items: center;
+            }
+            &:nth-child(2) {
+                > ul > li:nth-child(1) {
+                    padding-top: 5px;
+                }
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                top: 100%;
+                left: 0;
+                width: 99%;
+                height: 18px;
+                background-color: transparent;
+            }
+            &:hover {
+                > ul {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+                > svg {
+                    transform: rotate(-90deg);
+                }
+            }
+            > ul {
+                top: calc(100% + 16rem);
+                left: 0;
+                width: 125rem;
+                position: absolute;
+                border-radius: 4px;
+                background: #191919;
+                padding: 21rem 18rem;
+                display: grid;
+                row-gap: 16rem;
+                transform: scale(0);
+                transition: all 0.5s;
+                transform-origin: top left;
+                opacity: 0;
+                > li {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10.5rem;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        left: -18px;
+                        top: 0;
+                        width: calc(100% + 36px);
+                        height: 30px;
+                        background: transparent;
+                    }
+                    &:hover {
+                        > svg,
+                        > a {
+                            color: var(--spring-green);
+                        }
+                        > ul {
+                            transform: scale(1);
+                            opacity: 1;
+                        }
+                    }
+                    > a {
+                        font-size: 14rem;
+                        color: var(--white);
+                    }
+                    > ul {
+                        transform: scale(0);
+                        transform-origin: top left;
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        left: calc(100% + 14rem);
+                        width: 146px;
+                        min-height: 176px;
+                        padding: 20rem 14rem;
+                        border-radius: 4px;
+                        background: #191919;
+                        display: grid;
+                        row-gap: 14rem;
+                        > li {
+                            display: flex;
+                            align-items: center;
+                            column-gap: 8rem;
+                            &:hover {
+                                > a,
+                                > svg {
+                                    color: var(--spring-green);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-cta {
+        order: 4;
+        margin-left: auto;
+    }
+}

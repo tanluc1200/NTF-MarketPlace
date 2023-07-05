@@ -1,0 +1,68 @@
+:root {
+    --aeonik-font: "Aeonik", sans-serif;
+    --clash-font: "Clash Display", sans-serif;
+    --black: #000;
+    --light-black: #212127;
+    --spring-green: #17e3a6;
+    --boy-red: #6e7a44;
+    --white: #fff;
+    --white-2: #fdfdfd;
+    --dutch-white: #eaddb8;
+    --silver-1: #a4a4a4;
+    --silver-2: #a3a3a3;
+    --silver-3: #9d9d9d;
+    --grey-1: #595959;
+    --grey-2: #535357;
+    --grey-3: #cfcfcf;
+}
+.wrapper {
+    max-width: 1170px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+.btn {
+    color: var(--grey-3);
+    font-size: 20rem;
+    font-family: var(--clash-font);
+    font-style: normal;
+    font-weight: 500;
+    line-height: calc(30 / 20);
+    padding: 10rem 16rem;
+    border: 1.5rem solid var(--light-black);
+    background-color: var(--black);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    &:hover {
+        background-color: var(--spring-green);
+        color: var(--black);
+        border: 1.5rem solid var(--spring-green);
+    }
+    &.radius {
+        border-radius: 40px;
+        border: 1.5rem solid var(--silver-2);
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+        &:hover {
+            border: 1.5rem solid var(--spring-green);
+        }
+        &.green {
+            border-radius: 21px;
+            -webkit-border-radius: 21px;
+            -moz-border-radius: 21px;
+            -ms-border-radius: 21px;
+            -o-border-radius: 21px;
+            background-color: var(--spring-green);
+            border: 1.5rem solid var(--spring-green);
+            color: var(--black);
+            &:hover {
+                background-color: var(--white);
+                border: 1.5rem solid var(--white);
+            }
+        }
+    }
+}

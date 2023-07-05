@@ -1,0 +1,43 @@
+@media (max-width: 1024px) {
+    html {
+        // font-size: 5%;
+    }
+    .header {
+        &-mobile-menu,
+        &-mobile-search {
+            display: block;
+        }
+        &-search {
+            display: none;
+        }
+        &-logo {
+            margin-inline: auto;
+        }
+        &-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            padding-inline: 20px;
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: flex-start;
+            background-color: #212127;
+            .header-cta {
+                margin-left: 0;
+            }
+            > li {
+                height: 27px;
+                overflow: hidden;
+                &:hover {
+                    height: unset;
+                }
+                > ul {
+                    position: unset;
+                    overflow: unset;
+                }
+            }
+        }
+    }
+}
