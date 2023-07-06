@@ -1,0 +1,23 @@
+.hero {
+    &-content {
+        padding-block: 80rem 150rem;
+        display: flex;
+        align-items: center;
+        column-gap: 56px;
+        row-gap: 40px;
+        flex-wrap: wrap;
+    }
+    .btn {
+        min-width: 186rem;
+        min-height: 60rem;
+    }
+    .desc {
+        margin-block: 20rem 40rem;
+    }
+    &-info {
+        flex: 1 1 568px;
+    }
+    &-image {
+        flex: 1 1 546px;
+    }
+}

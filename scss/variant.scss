@@ -20,11 +20,49 @@
     width: calc(100% - 40px);
     margin: 0 auto;
 }
+.highlight {
+    background: linear-gradient(#17e3a6, #88deba, #57daf5, #9fa2ed, #fe5ae1, #ff669f);
+    color: #17e3a6;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heading {
+    font-family: Clash Display;
+    font-size: 56rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(60 / 56);
+    letter-spacing: 0.56px;
+}
+.heading-2 {
+    font-size: 50rem;
+    font-weight: 500;
+    line-height: calc(60 / 50);
+}
+.desc {
+    color: #cfcfcf;
+    font-size: 20rem;
+    line-height: calc(30 / 20);
+    letter-spacing: 0.2px;
+}
+.sub {
+    color: #17e3a6;
+    font-size: 20rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(30 / 20);
+    letter-spacing: 0.2px;
+}
 .btn {
+    min-height: 42rem;
+    min-width: 94rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: var(--grey-3);
     font-size: 20rem;
     font-family: var(--clash-font);
-    font-style: normal;
     font-weight: 500;
     line-height: calc(30 / 20);
     padding: 10rem 16rem;

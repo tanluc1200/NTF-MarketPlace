@@ -56,6 +56,7 @@
         }
     }
     &-menu {
+        flex: 1;
         order: 3;
         display: flex;
         align-items: center;
@@ -87,7 +88,7 @@
                     transform: scale(1);
                     opacity: 1;
                 }
-                > svg {
+                > a > svg {
                     transform: rotate(-90deg);
                 }
             }

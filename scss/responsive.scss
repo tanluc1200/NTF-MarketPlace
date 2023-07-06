@@ -14,11 +14,18 @@
             margin-inline: auto;
         }
         &-menu {
+            &.active {
+                transform: scale(1);
+                opacity: 1;
+            }
+            transform: scale(0);
+            transform-origin: top left;
+            opacity: 0;
             position: absolute;
             top: 100%;
             left: 0;
             right: 0;
-            height: 100vh;
+            min-height: 100vh;
             padding-inline: 20px;
             flex-direction: column;
             row-gap: 20px;
@@ -29,13 +36,23 @@
             }
             > li {
                 height: 27px;
-                overflow: hidden;
+                width: 100%;
                 &:hover {
                     height: unset;
                 }
                 > ul {
-                    position: unset;
-                    overflow: unset;
+                    position: relative;
+                    inset: unset;
+
+                    > li {
+                        > ul {
+                            height: 100%;
+                            position: unset;
+                            // left: calc(100% + 10px);
+                            // width: 200px;
+                            // top: 0;
+                        }
+                    }
                 }
             }
         }

@@ -1,0 +1,11 @@
+.partner {
+    background: #212127;
+    padding-block: 60px 70px;
+    &-wrap {
+        display: flex;
+        gap: 50px 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
